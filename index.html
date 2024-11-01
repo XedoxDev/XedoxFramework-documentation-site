@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>X-Framework</title>
+  <link rel="stylesheet" href="styles/styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+     
+</head>
+<body>
+  <h1 class="title">X-Framework</h1>
+  <p class="text">Сайт документации для фреймворка <a href="https://goo.su/EJcNnME">XedoxFramework.</a></p>
+    
+  <div class="text">
+    <H2>Введение</H2>
+    <p><a href="https://goo.su/r40UztU">Скачайте последнюю версию библиотеки</a>, и поместите файл по дирректории /app/libs/</p>
+    <p>В файл /app/build.gradle, в блок dependencies добавьте файл в зависимости приложения:</p>
+    
+    <pre><code lang="gradle">dependencies {
+  implementation files("libs/XFW.aar")
+}</code></pre>
+
+    <p>В MainActivtiy, создайте обьект класса XSurfaceView, передав контекст и наследник класса ScreenAdapter, экраны по своей сути являются сценами.</p>
+    <pre><code lang"java">XSurfaceView view = new XSurfaceView(this, new Main());
+setContentView(view);</code></pre>
+    <p>Создайте главный экранс наследуясь от ScreenAdapter. Также переопределяем методы start() и render(Canvas):</p>
+    <pre><code lang="java">public class Main extends ScreenAdapter {
+  @Override
+  public void start() {
+  }
+  
+  @Override
+  public void render(Canvas canvas) {
+  }
+}</code></pre>
+  </div>
+</body>
+           </html>
