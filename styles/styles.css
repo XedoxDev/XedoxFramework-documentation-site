@@ -1,0 +1,17 @@
+.title {
+  background-color: #6DCD85;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  font-size: 25px; 
+  text-align: center; 
+}
+
+.text {
+  background-color: #ffffff;
+  padding: 10px;
+  font-size: 20px; 
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
